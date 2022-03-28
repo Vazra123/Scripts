@@ -1,0 +1,345 @@
+
+
+-- Instances:
+
+local SGUI = Instance.new("ScreenGui")
+local MainFrame = Instance.new("ImageLabel")
+local Frame = Instance.new("ImageLabel")
+local InsideVault = Instance.new("TextButton")
+local DeBank = Instance.new("TextButton")
+local DHGUNS = Instance.new("TextButton")
+local UPHGuns = Instance.new("TextButton")
+local DeGuns = Instance.new("TextButton")
+local Rev = Instance.new("TextButton")
+local PumpkinL = Instance.new("TextButton")
+local Rpg = Instance.new("TextButton")
+local tnh = Instance.new("TextButton")
+local alienbase = Instance.new("TextButton")
+
+--Properties:
+
+SGUI.Name = "SGUI"
+SGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = SGUI
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.Position = UDim2.new(0.004, 0,0.012, 0)
+MainFrame.Size = UDim2.new(0, 273, 0, 418)
+MainFrame.Image = "rbxassetid://3570695787"
+MainFrame.ImageColor3 = Color3.fromRGB(45, 45, 45)
+MainFrame.ScaleType = Enum.ScaleType.Slice
+MainFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+MainFrame.SliceScale = 0.120
+
+Frame.Name = "Frame"
+Frame.Parent = MainFrame
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(-0.000887112692, 0, -0.00109039247, 0)
+Frame.Size = UDim2.new(0, 273, 0, 426)
+Frame.ZIndex = 0
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(30, 30, 30)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.120
+
+InsideVault.Name = "InsideVault"
+InsideVault.Parent = MainFrame
+InsideVault.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+InsideVault.BorderSizePixel = 0
+InsideVault.Position = UDim2.new(0.131868139, 0, 0.0239234474, 0)
+InsideVault.Size = UDim2.new(0, 200, 0, 31)
+InsideVault.Font = Enum.Font.SourceSansBold
+InsideVault.Text = "Inside Vault"
+InsideVault.TextColor3 = Color3.fromRGB(255, 255, 255)
+InsideVault.TextScaled = true
+InsideVault.TextSize = 14.000
+InsideVault.TextWrapped = true
+
+DeBank.Name = "De Bank"
+DeBank.Parent = MainFrame
+DeBank.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+DeBank.BorderSizePixel = 0
+DeBank.Position = UDim2.new(0.131868139, 0, 0.117224887, 0)
+DeBank.Size = UDim2.new(0, 200, 0, 31)
+DeBank.Font = Enum.Font.SourceSansBold
+DeBank.Text = "De Bank"
+DeBank.TextColor3 = Color3.fromRGB(255, 255, 255)
+DeBank.TextScaled = true
+DeBank.TextSize = 14.000
+DeBank.TextWrapped = true
+
+DHGUNS.Name = "DHGUNS"
+DHGUNS.Parent = MainFrame
+DHGUNS.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+DHGUNS.BorderSizePixel = 0
+DHGUNS.Position = UDim2.new(0.131868139, 0, 0.210526317, 0)
+DHGUNS.Size = UDim2.new(0, 200, 0, 31)
+DHGUNS.Font = Enum.Font.SourceSansBold
+DHGUNS.Text = "Downhill Guns"
+DHGUNS.TextColor3 = Color3.fromRGB(255, 255, 255)
+DHGUNS.TextScaled = true
+DHGUNS.TextSize = 14.000
+DHGUNS.TextWrapped = true
+
+UPHGuns.Name = "UPHGuns"
+UPHGuns.Parent = MainFrame
+UPHGuns.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+UPHGuns.BorderSizePixel = 0
+UPHGuns.Position = UDim2.new(0.131868139, 0, 0.308612436, 0)
+UPHGuns.Size = UDim2.new(0, 200, 0, 31)
+UPHGuns.Font = Enum.Font.SourceSansBold
+UPHGuns.Text = "UpHill Guns"
+UPHGuns.TextColor3 = Color3.fromRGB(255, 255, 255)
+UPHGuns.TextScaled = true
+UPHGuns.TextSize = 14.000
+UPHGuns.TextWrapped = true
+
+DeGuns.Name = "DeGuns"
+DeGuns.Parent = MainFrame
+DeGuns.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+DeGuns.BorderSizePixel = 0
+DeGuns.Position = UDim2.new(0.131868139, 0, 0.404306233, 0)
+DeGuns.Size = UDim2.new(0, 200, 0, 31)
+DeGuns.Font = Enum.Font.SourceSansBold
+DeGuns.Text = "De Guns"
+DeGuns.TextColor3 = Color3.fromRGB(255, 255, 255)
+DeGuns.TextScaled = true
+DeGuns.TextSize = 14.000
+DeGuns.TextWrapped = true
+
+Rev.Name = "Rev"
+Rev.Parent = MainFrame
+Rev.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Rev.BorderSizePixel = 0
+Rev.Position = UDim2.new(0.131868139, 0, 0.5, 0)
+Rev.Size = UDim2.new(0, 200, 0, 31)
+Rev.Font = Enum.Font.SourceSansBold
+Rev.Text = "Revolver"
+Rev.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rev.TextScaled = true
+Rev.TextSize = 14.000
+Rev.TextWrapped = true
+
+PumpkinL.Name = "PumpkinL"
+PumpkinL.Parent = MainFrame
+PumpkinL.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+PumpkinL.BorderSizePixel = 0
+PumpkinL.Position = UDim2.new(0.131868139, 0, 0.590909123, 0)
+PumpkinL.Size = UDim2.new(0, 200, 0, 31)
+PumpkinL.Font = Enum.Font.SourceSansBold
+PumpkinL.Text = "Pumpkin Launcher"
+PumpkinL.TextColor3 = Color3.fromRGB(255, 255, 255)
+PumpkinL.TextScaled = true
+PumpkinL.TextSize = 14.000
+PumpkinL.TextWrapped = true
+
+Rpg.Name = "Rpg"
+Rpg.Parent = MainFrame
+Rpg.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Rpg.BorderSizePixel = 0
+Rpg.Position = UDim2.new(0.131868139, 0, 0.684210539, 0)
+Rpg.Size = UDim2.new(0, 200, 0, 31)
+Rpg.Font = Enum.Font.SourceSansBold
+Rpg.Text = "Rocket Launcher"
+Rpg.TextColor3 = Color3.fromRGB(255, 255, 255)
+Rpg.TextScaled = true
+Rpg.TextSize = 14.000
+Rpg.TextWrapped = true
+
+tnh.Name = "t n h"
+tnh.Parent = MainFrame
+tnh.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+tnh.BorderSizePixel = 0
+tnh.Position = UDim2.new(0.131868139, 0, 0.784689009, 0)
+tnh.Size = UDim2.new(0, 200, 0, 31)
+tnh.Font = Enum.Font.SourceSansBold
+tnh.Text = "Taco N Hamburger"
+tnh.TextColor3 = Color3.fromRGB(255, 255, 255)
+tnh.TextScaled = true
+tnh.TextSize = 14.000
+tnh.TextWrapped = true
+
+alienbase.Name = "alienbase"
+alienbase.Parent = MainFrame
+alienbase.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+alienbase.BorderSizePixel = 0
+alienbase.Position = UDim2.new(0.131868139, 0, 0.880382776, 0)
+alienbase.Size = UDim2.new(0, 200, 0, 31)
+alienbase.Font = Enum.Font.SourceSansBold
+alienbase.Text = "Alien Base"
+alienbase.TextColor3 = Color3.fromRGB(255, 255, 255)
+alienbase.TextScaled = true
+alienbase.TextSize = 14.000
+alienbase.TextWrapped = true
+
+-- Scripts:
+
+local function OIMX_fake_script() -- InsideVault.LocalScript 
+	local script = Instance.new('LocalScript', InsideVault)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1487.229, 127.236, 457.479)
+	end)
+end
+coroutine.wrap(OIMX_fake_script)()
+local function JUXES_fake_script() -- DeBank.LocalScript 
+	local script = Instance.new('LocalScript', DeBank)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1380.556, 126.17, 456.124)
+	end)
+end
+coroutine.wrap(JUXES_fake_script)()
+local function STVJ_fake_script() -- DHGUNS.LocalScript 
+	local script = Instance.new('LocalScript', DHGUNS)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(514.449, 126.516, 102.663)
+	end)
+end
+coroutine.wrap(STVJ_fake_script)()
+local function ERDINMH_fake_script() -- UPHGuns.LocalScript 
+	local script = Instance.new('LocalScript', UPHGuns)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1018.19, 126.701, 161.938)
+	end)
+end
+coroutine.wrap(ERDINMH_fake_script)()
+local function GZHXU_fake_script() -- DeGuns.LocalScript 
+	local script = Instance.new('LocalScript', DeGuns)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(383.064, 140.798, 553.56)
+	end)
+end
+coroutine.wrap(GZHXU_fake_script)()
+local function XEJUYG_fake_script() -- Rev.LocalScript 
+	local script = Instance.new('LocalScript', Rev)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(490.205, 126.516, -79.932)
+	end)
+end
+coroutine.wrap(XEJUYG_fake_script)()
+local function QWEBA_fake_script() -- PumpkinL.LocalScript 
+	local script = Instance.new('LocalScript', PumpkinL)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(983.683, 160.764, 764.331)
+	end)
+end
+coroutine.wrap(QWEBA_fake_script)()
+local function GLPPOFB_fake_script() -- Rpg.LocalScript 
+	local script = Instance.new('LocalScript', Rpg)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(797.655, 127.651, -97.97)
+	end)
+end
+coroutine.wrap(GLPPOFB_fake_script)()
+local function SRWQG_fake_script() -- tnh.LocalScript 
+	local script = Instance.new('LocalScript', tnh)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(833.757, 128.797, 577.877)
+	end)
+end
+coroutine.wrap(SRWQG_fake_script)()
+local function YFEXCU_fake_script() -- alienbase.LocalScript 
+	local script = Instance.new('LocalScript', alienbase)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1455.643, 7.319, -8.535)
+	end)
+end
+coroutine.wrap(YFEXCU_fake_script)()
+local function LJGZXTY_fake_script() -- SGUI.EtoFly 
+	local script = Instance.new('LocalScript', SGUI)
+
+	repeat wait() 
+		until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
+	local mouse = game.Players.LocalPlayer:GetMouse() 
+	repeat wait() until mouse
+	local plr = game.Players.LocalPlayer 
+	local torso = plr.Character.Head 
+	local flying = false
+	local deb = true 
+	local ctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+	local maxspeed = 400 
+	local speed = 5000 
+	
+	function Fly() 
+	local bg = Instance.new("BodyGyro", torso) 
+	bg.P = 9e4 
+	bg.maxTorque = Vector3.new(9e9, 9e9, 9e9) 
+	bg.cframe = torso.CFrame 
+	local bv = Instance.new("BodyVelocity", torso) 
+	bv.velocity = Vector3.new(0,0.1,0) 
+	bv.maxForce = Vector3.new(9e9, 9e9, 9e9) 
+	repeat wait() 
+	plr.Character.Humanoid.PlatformStand = true 
+	if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then 
+	speed = speed+.5+(speed/maxspeed) 
+	if speed > maxspeed then 
+	speed = maxspeed 
+	end 
+	elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then 
+	speed = speed-1 
+	if speed < 0 then 
+	speed = 0 
+	end 
+	end 
+	if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then 
+	bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+	lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r} 
+	elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then 
+	bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed 
+	else 
+	bv.velocity = Vector3.new(0,0.1,0) 
+	end 
+	bg.cframe = game.Workspace.CurrentCamera.CoordinateFrame * CFrame.Angles(-math.rad((ctrl.f+ctrl.b)*50*speed/maxspeed),0,0) 
+	until not flying 
+	ctrl = {f = 0, b = 0, l = 0, r = 0} 
+	lastctrl = {f = 0, b = 0, l = 0, r = 0} 
+	speed = 0 
+	bg:Destroy() 
+	bv:Destroy() 
+	plr.Character.Humanoid.PlatformStand = false 
+	end 
+	mouse.KeyDown:connect(function(key) 
+	if key:lower() == "e" then 
+	if flying then flying = false 
+	else 
+	flying = true 
+	Fly() 
+	end 
+	elseif key:lower() == "w" then 
+	ctrl.f = 1 
+	elseif key:lower() == "s" then 
+	ctrl.b = -1 
+	elseif key:lower() == "a" then 
+	ctrl.l = -1 
+	elseif key:lower() == "d" then 
+	ctrl.r = 1 
+	end 
+	end) 
+	mouse.KeyUp:connect(function(key) 
+	if key:lower() == "w" then 
+	ctrl.f = 0 
+	elseif key:lower() == "s" then 
+	ctrl.b = 0 
+	elseif key:lower() == "a" then 
+	ctrl.l = 0 
+	elseif key:lower() == "d" then 
+	ctrl.r = 0 
+	end 
+	end)
+	Fly()
+end
+coroutine.wrap(LJGZXTY_fake_script)()
