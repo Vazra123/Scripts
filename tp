@@ -1,265 +1,558 @@
-
+-- Gui to Lua
+-- Version: 3.2
 
 -- Instances:
 
-local SGUI = Instance.new("ScreenGui")
-local MainFrame = Instance.new("ImageLabel")
+local ScreenGui = Instance.new("ScreenGui")
 local Frame = Instance.new("ImageLabel")
+local NameLabel = Instance.new("TextLabel")
+local Frame_2 = Instance.new("ImageLabel")
+local ScrollingFrame = Instance.new("ScrollingFrame")
 local InsideVault = Instance.new("TextButton")
-local DeBank = Instance.new("TextButton")
-local DHGUNS = Instance.new("TextButton")
+local InsideVault_Roundify_12px = Instance.new("ImageLabel")
+local debank = Instance.new("TextButton")
+local InsideVault_Roundify_12px_2 = Instance.new("ImageLabel")
 local UPHGuns = Instance.new("TextButton")
-local DeGuns = Instance.new("TextButton")
-local Rev = Instance.new("TextButton")
-local PumpkinL = Instance.new("TextButton")
-local Rpg = Instance.new("TextButton")
-local tnh = Instance.new("TextButton")
-local alienbase = Instance.new("TextButton")
+local InsideVault_Roundify_12px_3 = Instance.new("ImageLabel")
+local DHGuns = Instance.new("TextButton")
+local InsideVault_Roundify_12px_4 = Instance.new("ImageLabel")
+local DownHillFood = Instance.new("TextButton")
+local InsideVault_Roundify_12px_5 = Instance.new("ImageLabel")
+local Revolver = Instance.new("TextButton")
+local InsideVault_Roundify_12px_6 = Instance.new("ImageLabel")
+local Deguns = Instance.new("TextButton")
+local InsideVault_Roundify_12px_7 = Instance.new("ImageLabel")
+local decasino = Instance.new("TextButton")
+local InsideVault_Roundify_12px_8 = Instance.new("ImageLabel")
+local pmpkinlauncher = Instance.new("TextButton")
+local InsideVault_Roundify_12px_9 = Instance.new("ImageLabel")
+local RocketLacunher = Instance.new("TextButton")
+local InsideVault_Roundify_12px_10 = Instance.new("ImageLabel")
 
 --Properties:
 
-SGUI.Name = "SGUI"
-SGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = SGUI
-MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MainFrame.BackgroundTransparency = 1.000
-MainFrame.Position = UDim2.new(0.004, 0,0.012, 0)
-MainFrame.Size = UDim2.new(0, 273, 0, 418)
-MainFrame.Image = "rbxassetid://3570695787"
-MainFrame.ImageColor3 = Color3.fromRGB(45, 45, 45)
-MainFrame.ScaleType = Enum.ScaleType.Slice
-MainFrame.SliceCenter = Rect.new(100, 100, 100, 100)
-MainFrame.SliceScale = 0.120
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
 Frame.Name = "Frame"
-Frame.Parent = MainFrame
+Frame.Parent = ScreenGui
 Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Frame.BackgroundTransparency = 1.000
-Frame.Position = UDim2.new(-0.000887112692, 0, -0.00109039247, 0)
-Frame.Size = UDim2.new(0, 273, 0, 426)
-Frame.ZIndex = 0
+Frame.Position = UDim2.new(0.0312727243, 0, 0.244897977, 0)
+Frame.Size = UDim2.new(0, 160, 0, 199)
 Frame.Image = "rbxassetid://3570695787"
-Frame.ImageColor3 = Color3.fromRGB(30, 30, 30)
+Frame.ImageColor3 = Color3.fromRGB(75, 75, 75)
 Frame.ScaleType = Enum.ScaleType.Slice
 Frame.SliceCenter = Rect.new(100, 100, 100, 100)
 Frame.SliceScale = 0.120
 
+NameLabel.Name = "NameLabel"
+NameLabel.Parent = Frame
+NameLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NameLabel.BackgroundTransparency = 1.000
+NameLabel.BorderSizePixel = 0
+NameLabel.Position = UDim2.new(-0.17422539, 0, -0.180150807, 0)
+NameLabel.Size = UDim2.new(0, 214, 0, 45)
+NameLabel.ZIndex = 2
+NameLabel.Font = Enum.Font.SourceSansBold
+NameLabel.Text = "Teleports"
+NameLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+NameLabel.TextScaled = true
+NameLabel.TextSize = 14.000
+NameLabel.TextWrapped = true
+
+Frame_2.Name = "Frame"
+Frame_2.Parent = Frame
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.Position = UDim2.new(-0.0562499985, 0, -0.0477387719, 0)
+Frame_2.Size = UDim2.new(0, 177, 0, 218)
+Frame_2.ZIndex = 0
+Frame_2.Image = "rbxassetid://3570695787"
+Frame_2.ImageColor3 = Color3.fromRGB(50, 50, 50)
+Frame_2.ScaleType = Enum.ScaleType.Slice
+Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_2.SliceScale = 0.120
+
+ScrollingFrame.Parent = Frame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(75, 75, 75)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0.0437499993, 0, 0.000753738161, 0)
+ScrollingFrame.Size = UDim2.new(0, 146, 0, 190)
+
 InsideVault.Name = "InsideVault"
-InsideVault.Parent = MainFrame
-InsideVault.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+InsideVault.Parent = ScrollingFrame
+InsideVault.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+InsideVault.BackgroundTransparency = 1.000
 InsideVault.BorderSizePixel = 0
-InsideVault.Position = UDim2.new(0.131868139, 0, 0.0239234474, 0)
-InsideVault.Size = UDim2.new(0, 200, 0, 31)
+InsideVault.Position = UDim2.new(0.0479452051, 0, 0.0406540185, 0)
+InsideVault.Size = UDim2.new(0, 111, 0, 25)
+InsideVault.ZIndex = 2
 InsideVault.Font = Enum.Font.SourceSansBold
 InsideVault.Text = "Inside Vault"
 InsideVault.TextColor3 = Color3.fromRGB(255, 255, 255)
-InsideVault.TextScaled = true
-InsideVault.TextSize = 14.000
+InsideVault.TextSize = 20.000
 InsideVault.TextWrapped = true
 
-DeBank.Name = "De Bank"
-DeBank.Parent = MainFrame
-DeBank.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-DeBank.BorderSizePixel = 0
-DeBank.Position = UDim2.new(0.131868139, 0, 0.117224887, 0)
-DeBank.Size = UDim2.new(0, 200, 0, 31)
-DeBank.Font = Enum.Font.SourceSansBold
-DeBank.Text = "De Bank"
-DeBank.TextColor3 = Color3.fromRGB(255, 255, 255)
-DeBank.TextScaled = true
-DeBank.TextSize = 14.000
-DeBank.TextWrapped = true
+InsideVault_Roundify_12px.Name = "InsideVault_Roundify_12px"
+InsideVault_Roundify_12px.Parent = InsideVault
+InsideVault_Roundify_12px.Active = true
+InsideVault_Roundify_12px.AnchorPoint = Vector2.new(0.5, 0.5)
+InsideVault_Roundify_12px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InsideVault_Roundify_12px.BackgroundTransparency = 1.000
+InsideVault_Roundify_12px.Position = UDim2.new(0.5, 0, 0.5, 0)
+InsideVault_Roundify_12px.Selectable = true
+InsideVault_Roundify_12px.Size = UDim2.new(1, 0, 1, 0)
+InsideVault_Roundify_12px.Image = "rbxassetid://3570695787"
+InsideVault_Roundify_12px.ImageColor3 = Color3.fromRGB(50, 50, 50)
+InsideVault_Roundify_12px.ScaleType = Enum.ScaleType.Slice
+InsideVault_Roundify_12px.SliceCenter = Rect.new(100, 100, 100, 100)
+InsideVault_Roundify_12px.SliceScale = 0.120
 
-DHGUNS.Name = "DHGUNS"
-DHGUNS.Parent = MainFrame
-DHGUNS.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-DHGUNS.BorderSizePixel = 0
-DHGUNS.Position = UDim2.new(0.131868139, 0, 0.210526317, 0)
-DHGUNS.Size = UDim2.new(0, 200, 0, 31)
-DHGUNS.Font = Enum.Font.SourceSansBold
-DHGUNS.Text = "Downhill Guns"
-DHGUNS.TextColor3 = Color3.fromRGB(255, 255, 255)
-DHGUNS.TextScaled = true
-DHGUNS.TextSize = 14.000
-DHGUNS.TextWrapped = true
+debank.Name = "debank"
+debank.Parent = ScrollingFrame
+debank.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+debank.BackgroundTransparency = 1.000
+debank.BorderSizePixel = 0
+debank.Position = UDim2.new(0.0479452051, 0, 0.141156539, 0)
+debank.Size = UDim2.new(0, 111, 0, 25)
+debank.ZIndex = 2
+debank.Font = Enum.Font.SourceSansBold
+debank.Text = "De Bank"
+debank.TextColor3 = Color3.fromRGB(255, 255, 255)
+debank.TextSize = 20.000
+debank.TextWrapped = true
+
+InsideVault_Roundify_12px_2.Name = "InsideVault_Roundify_12px"
+InsideVault_Roundify_12px_2.Parent = debank
+InsideVault_Roundify_12px_2.Active = true
+InsideVault_Roundify_12px_2.AnchorPoint = Vector2.new(0.5, 0.5)
+InsideVault_Roundify_12px_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InsideVault_Roundify_12px_2.BackgroundTransparency = 1.000
+InsideVault_Roundify_12px_2.Position = UDim2.new(0.5, 0, 0.5, 0)
+InsideVault_Roundify_12px_2.Selectable = true
+InsideVault_Roundify_12px_2.Size = UDim2.new(1, 0, 1, 0)
+InsideVault_Roundify_12px_2.Image = "rbxassetid://3570695787"
+InsideVault_Roundify_12px_2.ImageColor3 = Color3.fromRGB(50, 50, 50)
+InsideVault_Roundify_12px_2.ScaleType = Enum.ScaleType.Slice
+InsideVault_Roundify_12px_2.SliceCenter = Rect.new(100, 100, 100, 100)
+InsideVault_Roundify_12px_2.SliceScale = 0.120
 
 UPHGuns.Name = "UPHGuns"
-UPHGuns.Parent = MainFrame
-UPHGuns.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+UPHGuns.Parent = ScrollingFrame
+UPHGuns.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+UPHGuns.BackgroundTransparency = 1.000
 UPHGuns.BorderSizePixel = 0
-UPHGuns.Position = UDim2.new(0.131868139, 0, 0.308612436, 0)
-UPHGuns.Size = UDim2.new(0, 200, 0, 31)
+UPHGuns.Position = UDim2.new(0.0479452051, 0, 0.239146486, 0)
+UPHGuns.Size = UDim2.new(0, 111, 0, 25)
+UPHGuns.ZIndex = 2
 UPHGuns.Font = Enum.Font.SourceSansBold
-UPHGuns.Text = "UpHill Guns"
+UPHGuns.Text = "Uphill Guns"
 UPHGuns.TextColor3 = Color3.fromRGB(255, 255, 255)
-UPHGuns.TextScaled = true
-UPHGuns.TextSize = 14.000
+UPHGuns.TextSize = 20.000
 UPHGuns.TextWrapped = true
 
-DeGuns.Name = "DeGuns"
-DeGuns.Parent = MainFrame
-DeGuns.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-DeGuns.BorderSizePixel = 0
-DeGuns.Position = UDim2.new(0.131868139, 0, 0.404306233, 0)
-DeGuns.Size = UDim2.new(0, 200, 0, 31)
-DeGuns.Font = Enum.Font.SourceSansBold
-DeGuns.Text = "De Guns"
-DeGuns.TextColor3 = Color3.fromRGB(255, 255, 255)
-DeGuns.TextScaled = true
-DeGuns.TextSize = 14.000
-DeGuns.TextWrapped = true
+InsideVault_Roundify_12px_3.Name = "InsideVault_Roundify_12px"
+InsideVault_Roundify_12px_3.Parent = UPHGuns
+InsideVault_Roundify_12px_3.Active = true
+InsideVault_Roundify_12px_3.AnchorPoint = Vector2.new(0.5, 0.5)
+InsideVault_Roundify_12px_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InsideVault_Roundify_12px_3.BackgroundTransparency = 1.000
+InsideVault_Roundify_12px_3.Position = UDim2.new(0.5, 0, 0.5, 0)
+InsideVault_Roundify_12px_3.Selectable = true
+InsideVault_Roundify_12px_3.Size = UDim2.new(1, 0, 1, 0)
+InsideVault_Roundify_12px_3.Image = "rbxassetid://3570695787"
+InsideVault_Roundify_12px_3.ImageColor3 = Color3.fromRGB(50, 50, 50)
+InsideVault_Roundify_12px_3.ScaleType = Enum.ScaleType.Slice
+InsideVault_Roundify_12px_3.SliceCenter = Rect.new(100, 100, 100, 100)
+InsideVault_Roundify_12px_3.SliceScale = 0.120
 
-Rev.Name = "Rev"
-Rev.Parent = MainFrame
-Rev.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Rev.BorderSizePixel = 0
-Rev.Position = UDim2.new(0.131868139, 0, 0.5, 0)
-Rev.Size = UDim2.new(0, 200, 0, 31)
-Rev.Font = Enum.Font.SourceSansBold
-Rev.Text = "Revolver"
-Rev.TextColor3 = Color3.fromRGB(255, 255, 255)
-Rev.TextScaled = true
-Rev.TextSize = 14.000
-Rev.TextWrapped = true
+DHGuns.Name = "DHGuns"
+DHGuns.Parent = ScrollingFrame
+DHGuns.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+DHGuns.BackgroundTransparency = 1.000
+DHGuns.BorderSizePixel = 0
+DHGuns.Position = UDim2.new(0.0479452051, 0, 0.334623873, 0)
+DHGuns.Size = UDim2.new(0, 111, 0, 25)
+DHGuns.ZIndex = 2
+DHGuns.Font = Enum.Font.SourceSansBold
+DHGuns.Text = "Downhill Guns"
+DHGuns.TextColor3 = Color3.fromRGB(255, 255, 255)
+DHGuns.TextSize = 20.000
+DHGuns.TextWrapped = true
 
-PumpkinL.Name = "PumpkinL"
-PumpkinL.Parent = MainFrame
-PumpkinL.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-PumpkinL.BorderSizePixel = 0
-PumpkinL.Position = UDim2.new(0.131868139, 0, 0.590909123, 0)
-PumpkinL.Size = UDim2.new(0, 200, 0, 31)
-PumpkinL.Font = Enum.Font.SourceSansBold
-PumpkinL.Text = "Pumpkin Launcher"
-PumpkinL.TextColor3 = Color3.fromRGB(255, 255, 255)
-PumpkinL.TextScaled = true
-PumpkinL.TextSize = 14.000
-PumpkinL.TextWrapped = true
+InsideVault_Roundify_12px_4.Name = "InsideVault_Roundify_12px"
+InsideVault_Roundify_12px_4.Parent = DHGuns
+InsideVault_Roundify_12px_4.Active = true
+InsideVault_Roundify_12px_4.AnchorPoint = Vector2.new(0.5, 0.5)
+InsideVault_Roundify_12px_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InsideVault_Roundify_12px_4.BackgroundTransparency = 1.000
+InsideVault_Roundify_12px_4.Position = UDim2.new(0.5, 0, 0.5, 0)
+InsideVault_Roundify_12px_4.Selectable = true
+InsideVault_Roundify_12px_4.Size = UDim2.new(1, 0, 1, 0)
+InsideVault_Roundify_12px_4.Image = "rbxassetid://3570695787"
+InsideVault_Roundify_12px_4.ImageColor3 = Color3.fromRGB(50, 50, 50)
+InsideVault_Roundify_12px_4.ScaleType = Enum.ScaleType.Slice
+InsideVault_Roundify_12px_4.SliceCenter = Rect.new(100, 100, 100, 100)
+InsideVault_Roundify_12px_4.SliceScale = 0.120
 
-Rpg.Name = "Rpg"
-Rpg.Parent = MainFrame
-Rpg.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-Rpg.BorderSizePixel = 0
-Rpg.Position = UDim2.new(0.131868139, 0, 0.684210539, 0)
-Rpg.Size = UDim2.new(0, 200, 0, 31)
-Rpg.Font = Enum.Font.SourceSansBold
-Rpg.Text = "Rocket Launcher"
-Rpg.TextColor3 = Color3.fromRGB(255, 255, 255)
-Rpg.TextScaled = true
-Rpg.TextSize = 14.000
-Rpg.TextWrapped = true
+DownHillFood.Name = "DownHill Food"
+DownHillFood.Parent = ScrollingFrame
+DownHillFood.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+DownHillFood.BackgroundTransparency = 1.000
+DownHillFood.BorderSizePixel = 0
+DownHillFood.Position = UDim2.new(0.0479452051, 0, 0.43261382, 0)
+DownHillFood.Size = UDim2.new(0, 111, 0, 25)
+DownHillFood.ZIndex = 2
+DownHillFood.Font = Enum.Font.SourceSansBold
+DownHillFood.Text = "DownHill Food"
+DownHillFood.TextColor3 = Color3.fromRGB(255, 255, 255)
+DownHillFood.TextSize = 20.000
+DownHillFood.TextWrapped = true
 
-tnh.Name = "t n h"
-tnh.Parent = MainFrame
-tnh.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-tnh.BorderSizePixel = 0
-tnh.Position = UDim2.new(0.131868139, 0, 0.784689009, 0)
-tnh.Size = UDim2.new(0, 200, 0, 31)
-tnh.Font = Enum.Font.SourceSansBold
-tnh.Text = "Taco N Hamburger"
-tnh.TextColor3 = Color3.fromRGB(255, 255, 255)
-tnh.TextScaled = true
-tnh.TextSize = 14.000
-tnh.TextWrapped = true
+InsideVault_Roundify_12px_5.Name = "InsideVault_Roundify_12px"
+InsideVault_Roundify_12px_5.Parent = DownHillFood
+InsideVault_Roundify_12px_5.Active = true
+InsideVault_Roundify_12px_5.AnchorPoint = Vector2.new(0.5, 0.5)
+InsideVault_Roundify_12px_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InsideVault_Roundify_12px_5.BackgroundTransparency = 1.000
+InsideVault_Roundify_12px_5.Position = UDim2.new(0.5, 0, 0.5, 0)
+InsideVault_Roundify_12px_5.Selectable = true
+InsideVault_Roundify_12px_5.Size = UDim2.new(1, 0, 1, 0)
+InsideVault_Roundify_12px_5.Image = "rbxassetid://3570695787"
+InsideVault_Roundify_12px_5.ImageColor3 = Color3.fromRGB(50, 50, 50)
+InsideVault_Roundify_12px_5.ScaleType = Enum.ScaleType.Slice
+InsideVault_Roundify_12px_5.SliceCenter = Rect.new(100, 100, 100, 100)
+InsideVault_Roundify_12px_5.SliceScale = 0.120
 
-alienbase.Name = "alienbase"
-alienbase.Parent = MainFrame
-alienbase.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
-alienbase.BorderSizePixel = 0
-alienbase.Position = UDim2.new(0.131868139, 0, 0.880382776, 0)
-alienbase.Size = UDim2.new(0, 200, 0, 31)
-alienbase.Font = Enum.Font.SourceSansBold
-alienbase.Text = "Alien Base"
-alienbase.TextColor3 = Color3.fromRGB(255, 255, 255)
-alienbase.TextScaled = true
-alienbase.TextSize = 14.000
-alienbase.TextWrapped = true
+Revolver.Name = "Revolver"
+Revolver.Parent = ScrollingFrame
+Revolver.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Revolver.BackgroundTransparency = 1.000
+Revolver.BorderSizePixel = 0
+Revolver.Position = UDim2.new(0.0479452051, 0, 0.520553529, 0)
+Revolver.Size = UDim2.new(0, 111, 0, 25)
+Revolver.ZIndex = 2
+Revolver.Font = Enum.Font.SourceSansBold
+Revolver.Text = "Revolver"
+Revolver.TextColor3 = Color3.fromRGB(255, 255, 255)
+Revolver.TextSize = 20.000
+Revolver.TextWrapped = true
+
+InsideVault_Roundify_12px_6.Name = "InsideVault_Roundify_12px"
+InsideVault_Roundify_12px_6.Parent = Revolver
+InsideVault_Roundify_12px_6.Active = true
+InsideVault_Roundify_12px_6.AnchorPoint = Vector2.new(0.5, 0.5)
+InsideVault_Roundify_12px_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InsideVault_Roundify_12px_6.BackgroundTransparency = 1.000
+InsideVault_Roundify_12px_6.Position = UDim2.new(0.5, 0, 0.5, 0)
+InsideVault_Roundify_12px_6.Selectable = true
+InsideVault_Roundify_12px_6.Size = UDim2.new(1, 0, 1, 0)
+InsideVault_Roundify_12px_6.Image = "rbxassetid://3570695787"
+InsideVault_Roundify_12px_6.ImageColor3 = Color3.fromRGB(50, 50, 50)
+InsideVault_Roundify_12px_6.ScaleType = Enum.ScaleType.Slice
+InsideVault_Roundify_12px_6.SliceCenter = Rect.new(100, 100, 100, 100)
+InsideVault_Roundify_12px_6.SliceScale = 0.120
+
+Deguns.Name = "Deguns"
+Deguns.Parent = ScrollingFrame
+Deguns.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Deguns.BackgroundTransparency = 1.000
+Deguns.BorderSizePixel = 0
+Deguns.Position = UDim2.new(0.0479452051, 0, 0.616030931, 0)
+Deguns.Size = UDim2.new(0, 111, 0, 25)
+Deguns.ZIndex = 2
+Deguns.Font = Enum.Font.SourceSansBold
+Deguns.Text = "De Guns"
+Deguns.TextColor3 = Color3.fromRGB(255, 255, 255)
+Deguns.TextSize = 20.000
+Deguns.TextWrapped = true
+
+InsideVault_Roundify_12px_7.Name = "InsideVault_Roundify_12px"
+InsideVault_Roundify_12px_7.Parent = Deguns
+InsideVault_Roundify_12px_7.Active = true
+InsideVault_Roundify_12px_7.AnchorPoint = Vector2.new(0.5, 0.5)
+InsideVault_Roundify_12px_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InsideVault_Roundify_12px_7.BackgroundTransparency = 1.000
+InsideVault_Roundify_12px_7.Position = UDim2.new(0.5, 0, 0.5, 0)
+InsideVault_Roundify_12px_7.Selectable = true
+InsideVault_Roundify_12px_7.Size = UDim2.new(1, 0, 1, 0)
+InsideVault_Roundify_12px_7.Image = "rbxassetid://3570695787"
+InsideVault_Roundify_12px_7.ImageColor3 = Color3.fromRGB(50, 50, 50)
+InsideVault_Roundify_12px_7.ScaleType = Enum.ScaleType.Slice
+InsideVault_Roundify_12px_7.SliceCenter = Rect.new(100, 100, 100, 100)
+InsideVault_Roundify_12px_7.SliceScale = 0.120
+
+decasino.Name = "decasino"
+decasino.Parent = ScrollingFrame
+decasino.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+decasino.BackgroundTransparency = 1.000
+decasino.BorderSizePixel = 0
+decasino.Position = UDim2.new(0.0479452051, 0, 0.711508334, 0)
+decasino.Size = UDim2.new(0, 111, 0, 25)
+decasino.ZIndex = 2
+decasino.Font = Enum.Font.SourceSansBold
+decasino.Text = "De Casino"
+decasino.TextColor3 = Color3.fromRGB(255, 255, 255)
+decasino.TextSize = 20.000
+decasino.TextWrapped = true
+
+InsideVault_Roundify_12px_8.Name = "InsideVault_Roundify_12px"
+InsideVault_Roundify_12px_8.Parent = decasino
+InsideVault_Roundify_12px_8.Active = true
+InsideVault_Roundify_12px_8.AnchorPoint = Vector2.new(0.5, 0.5)
+InsideVault_Roundify_12px_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InsideVault_Roundify_12px_8.BackgroundTransparency = 1.000
+InsideVault_Roundify_12px_8.Position = UDim2.new(0.5, 0, 0.5, 0)
+InsideVault_Roundify_12px_8.Selectable = true
+InsideVault_Roundify_12px_8.Size = UDim2.new(1, 0, 1, 0)
+InsideVault_Roundify_12px_8.Image = "rbxassetid://3570695787"
+InsideVault_Roundify_12px_8.ImageColor3 = Color3.fromRGB(50, 50, 50)
+InsideVault_Roundify_12px_8.ScaleType = Enum.ScaleType.Slice
+InsideVault_Roundify_12px_8.SliceCenter = Rect.new(100, 100, 100, 100)
+InsideVault_Roundify_12px_8.SliceScale = 0.120
+
+pmpkinlauncher.Name = "pmpkinlauncher"
+pmpkinlauncher.Parent = ScrollingFrame
+pmpkinlauncher.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+pmpkinlauncher.BackgroundTransparency = 1.000
+pmpkinlauncher.BorderSizePixel = 0
+pmpkinlauncher.Position = UDim2.new(0.0479452051, 0, 0.80949825, 0)
+pmpkinlauncher.Size = UDim2.new(0, 111, 0, 25)
+pmpkinlauncher.ZIndex = 2
+pmpkinlauncher.Font = Enum.Font.SourceSansBold
+pmpkinlauncher.Text = "Pumpkin L"
+pmpkinlauncher.TextColor3 = Color3.fromRGB(255, 255, 255)
+pmpkinlauncher.TextSize = 20.000
+pmpkinlauncher.TextWrapped = true
+
+InsideVault_Roundify_12px_9.Name = "InsideVault_Roundify_12px"
+InsideVault_Roundify_12px_9.Parent = pmpkinlauncher
+InsideVault_Roundify_12px_9.Active = true
+InsideVault_Roundify_12px_9.AnchorPoint = Vector2.new(0.5, 0.5)
+InsideVault_Roundify_12px_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InsideVault_Roundify_12px_9.BackgroundTransparency = 1.000
+InsideVault_Roundify_12px_9.Position = UDim2.new(0.5, 0, 0.5, 0)
+InsideVault_Roundify_12px_9.Selectable = true
+InsideVault_Roundify_12px_9.Size = UDim2.new(1, 0, 1, 0)
+InsideVault_Roundify_12px_9.Image = "rbxassetid://3570695787"
+InsideVault_Roundify_12px_9.ImageColor3 = Color3.fromRGB(50, 50, 50)
+InsideVault_Roundify_12px_9.ScaleType = Enum.ScaleType.Slice
+InsideVault_Roundify_12px_9.SliceCenter = Rect.new(100, 100, 100, 100)
+InsideVault_Roundify_12px_9.SliceScale = 0.120
+
+RocketLacunher.Name = "Rocket Lacunher"
+RocketLacunher.Parent = ScrollingFrame
+RocketLacunher.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+RocketLacunher.BackgroundTransparency = 1.000
+RocketLacunher.BorderSizePixel = 0
+RocketLacunher.Position = UDim2.new(0.0479452051, 0, 0.910000741, 0)
+RocketLacunher.Size = UDim2.new(0, 111, 0, 25)
+RocketLacunher.ZIndex = 2
+RocketLacunher.Font = Enum.Font.SourceSansBold
+RocketLacunher.Text = "Rocket L"
+RocketLacunher.TextColor3 = Color3.fromRGB(255, 255, 255)
+RocketLacunher.TextSize = 20.000
+RocketLacunher.TextWrapped = true
+
+InsideVault_Roundify_12px_10.Name = "InsideVault_Roundify_12px"
+InsideVault_Roundify_12px_10.Parent = RocketLacunher
+InsideVault_Roundify_12px_10.Active = true
+InsideVault_Roundify_12px_10.AnchorPoint = Vector2.new(0.5, 0.5)
+InsideVault_Roundify_12px_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InsideVault_Roundify_12px_10.BackgroundTransparency = 1.000
+InsideVault_Roundify_12px_10.Position = UDim2.new(0.5, 0, 0.5, 0)
+InsideVault_Roundify_12px_10.Selectable = true
+InsideVault_Roundify_12px_10.Size = UDim2.new(1, 0, 1, 0)
+InsideVault_Roundify_12px_10.Image = "rbxassetid://3570695787"
+InsideVault_Roundify_12px_10.ImageColor3 = Color3.fromRGB(50, 50, 50)
+InsideVault_Roundify_12px_10.ScaleType = Enum.ScaleType.Slice
+InsideVault_Roundify_12px_10.SliceCenter = Rect.new(100, 100, 100, 100)
+InsideVault_Roundify_12px_10.SliceScale = 0.120
 
 -- Scripts:
 
-local function OIMX_fake_script() -- InsideVault.LocalScript 
+local function AWDQG_fake_script() -- NameLabel.RainbowText 
+	local script = Instance.new('LocalScript', NameLabel)
+
+	--//SHADZYDEV//--
+	local r = {
+		Color3.fromRGB(254, 0, 0);		--red
+		Color3.fromRGB(255, 127, 0);	--orange
+		Color3.fromRGB(255, 221, 1);	--yellow
+		Color3.fromRGB(0, 200, 0);		--green
+		Color3.fromRGB(0, 160, 199);	--light blue
+		Color3.fromRGB(0, 55, 230);		--dark blue
+		Color3.fromRGB(129, 16, 210)}	--purple
+	local info = TweenInfo.new(0.2, Enum.EasingStyle.Linear, Enum.EasingDirection.InOut, 0, false, 0)
+	script.Parent.TextColor3 = r[1]
+	i = 1
+	while true do
+		local tween = game:GetService("TweenService"):Create(script.Parent, info, {
+			TextColor3 = r[i]})
+		tween:Play()
+		repeat wait() until tween.Completed
+		wait(0.1)
+		if i == #r then i = 1 else i = i + 1 end
+	end
+end
+coroutine.wrap(AWDQG_fake_script)()
+local function UEJW_fake_script() -- InsideVault.LocalScript 
 	local script = Instance.new('LocalScript', InsideVault)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1487.229, 127.236, 457.479)
 	end)
 end
-coroutine.wrap(OIMX_fake_script)()
-local function JUXES_fake_script() -- DeBank.LocalScript 
-	local script = Instance.new('LocalScript', DeBank)
+coroutine.wrap(UEJW_fake_script)()
+local function KOQQCRN_fake_script() -- debank.LocalScript 
+	local script = Instance.new('LocalScript', debank)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1380.556, 126.17, 456.124)
 	end)
 end
-coroutine.wrap(JUXES_fake_script)()
-local function STVJ_fake_script() -- DHGUNS.LocalScript 
-	local script = Instance.new('LocalScript', DHGUNS)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(514.449, 126.516, 102.663)
-	end)
-end
-coroutine.wrap(STVJ_fake_script)()
-local function ERDINMH_fake_script() -- UPHGuns.LocalScript 
+coroutine.wrap(KOQQCRN_fake_script)()
+local function HZZVBZL_fake_script() -- UPHGuns.LocalScript 
 	local script = Instance.new('LocalScript', UPHGuns)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1018.19, 126.701, 161.938)
 	end)
 end
-coroutine.wrap(ERDINMH_fake_script)()
-local function GZHXU_fake_script() -- DeGuns.LocalScript 
-	local script = Instance.new('LocalScript', DeGuns)
+coroutine.wrap(HZZVBZL_fake_script)()
+local function DSAPSA_fake_script() -- DHGuns.LocalScript 
+	local script = Instance.new('LocalScript', DHGuns)
 
 	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(383.064, 140.798, 553.56)
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(514.449, 126.516, 102.663)
 	end)
 end
-coroutine.wrap(GZHXU_fake_script)()
-local function XEJUYG_fake_script() -- Rev.LocalScript 
-	local script = Instance.new('LocalScript', Rev)
+coroutine.wrap(DSAPSA_fake_script)()
+local function PJZV_fake_script() -- DownHillFood.LocalScript 
+	local script = Instance.new('LocalScript', DownHillFood)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(453.37, 128.361, -8.852)
+	end)
+end
+coroutine.wrap(PJZV_fake_script)()
+local function EHDFNYN_fake_script() -- Revolver.LocalScript 
+	local script = Instance.new('LocalScript', Revolver)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(490.205, 126.516, -79.932)
 	end)
 end
-coroutine.wrap(XEJUYG_fake_script)()
-local function QWEBA_fake_script() -- PumpkinL.LocalScript 
-	local script = Instance.new('LocalScript', PumpkinL)
+coroutine.wrap(EHDFNYN_fake_script)()
+local function AFBDFAU_fake_script() -- Deguns.LocalScript 
+	local script = Instance.new('LocalScript', Deguns)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(383.064, 140.798, 553.56)
+	end)
+end
+coroutine.wrap(AFBDFAU_fake_script)()
+local function ADHEC_fake_script() -- decasino.LocalScript 
+	local script = Instance.new('LocalScript', decasino)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(573.894, 140.797, 364.618)
+	end)
+end
+coroutine.wrap(ADHEC_fake_script)()
+local function TWVQ_fake_script() -- pmpkinlauncher.LocalScript 
+	local script = Instance.new('LocalScript', pmpkinlauncher)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(983.683, 160.764, 764.331)
 	end)
 end
-coroutine.wrap(QWEBA_fake_script)()
-local function GLPPOFB_fake_script() -- Rpg.LocalScript 
-	local script = Instance.new('LocalScript', Rpg)
+coroutine.wrap(TWVQ_fake_script)()
+local function UCLT_fake_script() -- RocketLacunher.LocalScript 
+	local script = Instance.new('LocalScript', RocketLacunher)
 
 	script.Parent.MouseButton1Click:Connect(function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(797.655, 127.651, -97.97)
 	end)
 end
-coroutine.wrap(GLPPOFB_fake_script)()
-local function SRWQG_fake_script() -- tnh.LocalScript 
-	local script = Instance.new('LocalScript', tnh)
+coroutine.wrap(UCLT_fake_script)()
+local function AWOD_fake_script() -- Frame.Draggable 
+	local script = Instance.new('LocalScript', Frame)
 
-	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(833.757, 128.797, 577.877)
+	local UIS = game:GetService('UserInputService')
+	
+	local frame = script.Parent
+	
+	
+	
+	local dragToggle = nil
+	
+	local dragSpeed = 0.5
+	
+	local dragStart = nil
+	
+	local startPos = nil
+	
+	
+	
+	local function updateInput(input)
+	
+		local delta = input.Position - dragStart
+	
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+	
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	
+	end
+	
+	
+	
+	frame.InputBegan:Connect(function(input)
+	
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+	
+			dragToggle = true
+	
+			dragStart = input.Position
+	
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+	
+				if input.UserInputState == Enum.UserInputState.End then
+	
+					dragToggle = false
+	
+				end
+	
+			end)
+	
+		end
+	
+	end)
+	
+	
+	
+	UIS.InputChanged:Connect(function(input)
+	
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	
+			if dragToggle then
+	
+				updateInput(input)
+	
+			end
+	
+		end
+	
 	end)
 end
-coroutine.wrap(SRWQG_fake_script)()
-local function YFEXCU_fake_script() -- alienbase.LocalScript 
-	local script = Instance.new('LocalScript', alienbase)
-
-	script.Parent.MouseButton1Click:Connect(function()
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1455.643, 7.319, -8.535)
-	end)
-end
-coroutine.wrap(YFEXCU_fake_script)()
-local function LJGZXTY_fake_script() -- SGUI.EtoFly 
-	local script = Instance.new('LocalScript', SGUI)
+coroutine.wrap(AWOD_fake_script)()
+local function CJNEKOL_fake_script() -- ScreenGui.E To fly (place in starter pack) 
+	local script = Instance.new('LocalScript', ScreenGui)
 
 	repeat wait() 
 		until game.Players.LocalPlayer and game.Players.LocalPlayer.Character and game.Players.LocalPlayer.Character:findFirstChild("Head") and game.Players.LocalPlayer.Character:findFirstChild("Humanoid") 
@@ -342,4 +635,557 @@ local function LJGZXTY_fake_script() -- SGUI.EtoFly
 	end)
 	Fly()
 end
-coroutine.wrap(LJGZXTY_fake_script)()
+coroutine.wrap(CJNEKOL_fake_script)()
+local function RKBCIF_fake_script() -- ScreenGui.The Flash's Speed and Trail 
+	local script = Instance.new('Script', ScreenGui)
+
+	--Tip from UltimateGhost455 look for another "--" it will show how to change colour for other characters and delete this when you know what to do--
+	wait()
+	Player = game.Players.LocalPlayer
+	Object = Player.Character.HumanoidRootPart
+	Arm1 = Player.Character["Right Arm"]
+	PreviousA1 = Arm1.CFrame.p
+	Arm2 = Player.Character["Left Arm"]
+	PreviousA2 = Arm2.CFrame.p
+	
+	Leg1 = Player.Character["Right Leg"]
+	PreviousL1 = Leg1.CFrame.p
+	Leg2 = Player.Character["Left Leg"]
+	PreviousL2 = Leg2.CFrame.p
+	
+	Run = game["Run Service"]
+	
+	PreviousP = Object.CFrame.p
+	Running = false
+	Phase = false
+	PhaseActive = false
+	Morph = false
+	MorphActive = false
+	Tornado = false
+	TornadoRadius = 50
+	TornadoActive = false
+	Portal = false
+	PortalEnd = false
+	MaxZ = 15
+	MinZ = -15
+	LightMaxX = 3
+	LightMinX = 1
+	LightMaxX2 = -1
+	LightMinX2 = -3
+	LightMaxY = 3
+	LightMinY = -1
+	Rotation = 0
+	Length = 10
+	Color = BrickColor.Yellow()--change the name to simple colours for example (Green, Black, Blue. Red)--
+	PColor = Color3.new(237, 234, 234)--add a brick and look for the colour you want if you want to change and look on under VrickColor--
+	PrevPoint1 = nil
+	PrevPoint2 = nil
+	PrevPoint3 = nil
+	PrevPoint4 = nil
+	PrevPoint5 = nil
+	PrevPoint6 = nil
+	PrevPoint7 = nil
+	PrevPoint8 = nil
+	PrevPoint9 = nil
+	PrevPoint10 = nil
+	PrevPoint11 = nil
+	PrevPoint12 = nil
+	angle = 0
+	Mouse = Player:GetMouse()
+	Player.Character.Humanoid.WalkSpeed = 100
+	
+	Nil = function()
+		PrevPoint1 = "Empty"
+		PrevPoint2 = "Empty"
+		PrevPoint3 = "Empty"
+		PrevPoint4 = "Empty"
+		PrevPoint5 = "Empty"
+		PrevPoint6 = "Empty"
+		PrevPoint7 = "Empty"
+		PrevPoint8 = "Empty"
+		PrevPoint9 = "Empty"
+		PrevPoint10 = "Empty"
+		PrevPoint11 = "Empty"
+		PrevPoint12 = "Empty"
+	end
+	
+	Run.RenderStepped:connect(function()
+		if (Object.CFrame.p - PreviousP).magnitude > 7 and Player.Character.Humanoid.WalkSpeed > 25 and Portal == false and PortalEnd == false then
+		local Model = Instance.new("Model",workspace)
+		Model.Name = "Ray"
+		local Humanoid = Instance.new("Humanoid",Model)
+		if Player.Character:FindFirstChild("Shirt") ~= nil then
+			Player.Character.Shirt:Clone().Parent = Model
+		end
+		if Player.Character:FindFirstChild("Pants") ~= nil then
+			Player.Character.Pants:Clone().Parent = Model
+		end
+		local distance = (Object.CFrame.p - PreviousP).magnitude
+		local Light = Instance.new("Part",Model)
+		Light.Anchored = true
+		Light.CanCollide = false
+		Light.TopSurface = "SmoothNoOutlines"
+		Light.BottomSurface = "SmoothNoOutlines"
+		Light.BackSurface = "SmoothNoOutlines"
+		Light.FrontSurface = "SmoothNoOutlines"
+		Light.LeftSurface = "SmoothNoOutlines"
+		Light.RightSurface = "SmoothNoOutlines"
+		Light.Transparency = 1
+		Light.BrickColor = BrickColor.Black()
+		Light.Size = Vector3.new(2,2,distance)
+		Light.CFrame = CFrame.new(Object.CFrame.p , PreviousP) * CFrame.new(0,0,-distance/2) 
+		
+		local PointLight = Instance.new("PointLight",Light)
+		PointLight.Range = 15
+		PointLight.Brightness = 100
+		PointLight.Color = PColor
+	
+		local distance = (Arm1.CFrame.p - PreviousA1).magnitude
+	
+		local Arm1Light = Instance.new("Part",Model)
+		Arm1Light.Name = "Right Arm"
+		Arm1Light.Anchored = true
+		Arm1Light.CanCollide = false
+		Arm1Light.TopSurface = "SmoothNoOutlines"
+		Arm1Light.BottomSurface = "SmoothNoOutlines"
+		Arm1Light.BackSurface = "SmoothNoOutlines"
+		Arm1Light.FrontSurface = "SmoothNoOutlines"
+		Arm1Light.LeftSurface = "SmoothNoOutlines"
+		Arm1Light.RightSurface = "SmoothNoOutlines"
+		Arm1Light.Transparency = 0.5
+		Arm1Light.BrickColor = BrickColor.Black()
+		Arm1Light.Size = Vector3.new(1,2,distance)
+		Arm1Light.CFrame = CFrame.new(Arm1.CFrame.p , PreviousA1) * CFrame.new(0,0,-distance/2) * CFrame.Angles(0,math.rad(180),0)
+	
+		local distance = (Arm2.CFrame.p - PreviousA2).magnitude
+	
+		local Arm2Light = Instance.new("Part",Model)
+		Arm2Light.Name = "Left Arm"
+		Arm2Light.Anchored = true
+		Arm2Light.CanCollide = false
+		Arm2Light.TopSurface = "SmoothNoOutlines"
+		Arm2Light.BottomSurface = "SmoothNoOutlines"
+		Arm2Light.BackSurface = "SmoothNoOutlines"
+		Arm2Light.FrontSurface = "SmoothNoOutlines"
+		Arm2Light.LeftSurface = "SmoothNoOutlines"
+		Arm2Light.RightSurface = "SmoothNoOutlines"
+		Arm2Light.Transparency = 0.5
+		Arm2Light.BrickColor = BrickColor.Black()
+		Arm2Light.Size = Vector3.new(1,2,distance)
+		Arm2Light.CFrame = CFrame.new(Arm2.CFrame.p , PreviousA2) * CFrame.new(0,0,-distance/2) * CFrame.Angles(0,math.rad(180),0)
+	
+		local distance = (Leg1.CFrame.p - PreviousL1).magnitude
+	
+		local Leg1Light = Instance.new("Part",Model)
+		Leg1Light.Name = "Right Leg"
+		Leg1Light.Anchored = true
+		Leg1Light.CanCollide = false
+		Leg1Light.TopSurface = "SmoothNoOutlines"
+		Leg1Light.BottomSurface = "SmoothNoOutlines"
+		Leg1Light.BackSurface = "SmoothNoOutlines"
+		Leg1Light.FrontSurface = "SmoothNoOutlines"
+		Leg1Light.LeftSurface = "SmoothNoOutlines"
+		Leg1Light.RightSurface = "SmoothNoOutlines"
+		Leg1Light.Transparency = 0.5
+		Leg1Light.BrickColor = BrickColor.Black()
+		Leg1Light.Size = Vector3.new(1,2,distance)
+		Leg1Light.CFrame = CFrame.new(Leg1.CFrame.p , PreviousL1) * CFrame.new(0,0,-distance/2) * CFrame.Angles(0,math.rad(180),0)
+	
+		local distance = (Leg2.CFrame.p - PreviousL2).magnitude
+	
+		local Leg1Light = Instance.new("Part",Model)
+		Leg1Light.Name = "Left Leg"
+		Leg1Light.Anchored = true
+		Leg1Light.CanCollide = false
+		Leg1Light.TopSurface = "SmoothNoOutlines"
+		Leg1Light.BottomSurface = "SmoothNoOutlines"
+		Leg1Light.BackSurface = "SmoothNoOutlines"
+		Leg1Light.FrontSurface = "SmoothNoOutlines"
+		Leg1Light.LeftSurface = "SmoothNoOutlines"
+		Leg1Light.RightSurface = "SmoothNoOutlines"
+		Leg1Light.Transparency = 0.5
+		Leg1Light.BrickColor = BrickColor.Black()
+		Leg1Light.Size = Vector3.new(1,2,distance)
+		Leg1Light.CFrame = CFrame.new(Leg2.CFrame.p , PreviousL2) * CFrame.new(0,0,-distance/2) * CFrame.Angles(0,math.rad(180),0)
+	
+		local Point1 = Instance.new("Part",Model)
+		Point1.Transparency = 1
+		Point1.Anchored = true
+		Point1.CanCollide = false
+		Point1.Size = Vector3.new(0.2,0.2,0.2)
+		Point1.CFrame = Light.CFrame * CFrame.new(0,0,-Light.Size.Z/2)
+		 * CFrame.new(Light.Size.X/2 ,0 ,0)
+		 * CFrame.new(math.random(LightMinX,LightMaxX),0,0) 
+		 * CFrame.new(0,math.random(LightMinY,LightMaxY),0)
+		
+		local Point2 = Instance.new("Part",Model)
+		Point2.Transparency = 1
+		Point2.Anchored = true
+		Point2.CanCollide = false
+		Point2.Size = Vector3.new(0.2,0.2,0.2)
+		Point2.CFrame = Light.CFrame * CFrame.new(0,0,Light.Size.Z/2)
+		 * CFrame.new(Light.Size.X/2 ,0 ,0)
+		 * CFrame.new(math.random(LightMinX,LightMaxX),0,0) 
+		 * CFrame.new(0,math.random(LightMinY,LightMaxY),0)
+		
+		local Point5 = Instance.new("Part",Model)
+		Point5.Transparency = 1
+		Point5.Anchored = true
+		Point5.CanCollide = false
+		Point5.Size = Vector3.new(0.2,0.2,0.2)
+		Point5.CFrame = Light.CFrame * CFrame.new(0,0,-Light.Size.Z/2)
+		 * CFrame.new(Light.Size.X/2 ,0 ,0)
+		 * CFrame.new(math.random(LightMinX,LightMaxX),0,0) 
+		 * CFrame.new(0,math.random(LightMinY,LightMaxY),0)
+		
+		local Point6 = Instance.new("Part",Model)
+		Point6.Transparency = 1
+		Point6.Anchored = true
+		Point6.CanCollide = false
+		Point6.Size = Vector3.new(0.2,0.2,0.2)
+		Point6.CFrame = Light.CFrame * CFrame.new(0,0,Light.Size.Z/2)
+		 * CFrame.new(Light.Size.X/2 ,0 ,0)
+		 * CFrame.new(math.random(LightMinX,LightMaxX),0,0) 
+		 * CFrame.new(0,math.random(LightMinY,LightMaxY),0)
+		
+		local Point3 = Instance.new("Part",Model)
+		Point3.Transparency = 1
+		Point3.Anchored = true
+		Point3.CanCollide = false
+		Point3.Size = Vector3.new(0.2,0.2,0.2)
+		Point3.CFrame = Light.CFrame * CFrame.new(0,0,-Light.Size.Z/2)
+		 * CFrame.new(-Light.Size.X/2 ,0 ,0)
+		 * CFrame.new(math.random(LightMinX2,LightMaxX2),0,0) 
+		 * CFrame.new(0,math.random(LightMinY,LightMaxY),0)
+		
+		local Point4 = Instance.new("Part",Model)
+		Point4.Transparency = 1
+		Point4.Anchored = true
+		Point4.CanCollide = false
+		Point4.Size = Vector3.new(0.2,0.2,0.2)
+		Point4.CFrame = Light.CFrame * CFrame.new(0,0,Light.Size.Z/2)
+		 * CFrame.new(-Light.Size.X/2 ,0 ,0)
+		 * CFrame.new(math.random(LightMinX2,LightMaxX2),0,0) 
+		 * CFrame.new(0,math.random(LightMinY,LightMaxY),0)
+	
+		local Point7 = Instance.new("Part",Model)
+		Point7.Transparency = 1
+		Point7.Anchored = true
+		Point7.CanCollide = false
+		Point7.Size = Vector3.new(0.2,0.2,0.2)
+		Point7.CFrame = Light.CFrame * CFrame.new(0,0,-Light.Size.Z/2)
+		 * CFrame.new(-Light.Size.X/2 ,0 ,0)
+		 * CFrame.new(math.random(LightMinX2,LightMaxX2),0,0) 
+		 * CFrame.new(0,math.random(LightMinY,LightMaxY),0)
+		
+		local Point8 = Instance.new("Part",Model)
+		Point8.Transparency = 1
+		Point8.Anchored = true
+		Point8.CanCollide = false
+		Point8.Size = Vector3.new(0.2,0.2,0.2)
+		Point8.CFrame = Light.CFrame * CFrame.new(0,0,Light.Size.Z/2)
+		 * CFrame.new(-Light.Size.X/2 ,0 ,0)
+		 * CFrame.new(math.random(LightMinX2,LightMaxX2),0,0) 
+		 * CFrame.new(0,math.random(LightMinY,LightMaxY),0)
+	
+		local Point9 = Instance.new("Part",Model)
+		Point9.Transparency = 1
+		Point9.Anchored = true
+		Point9.CanCollide = false
+		Point9.Size = Vector3.new(0.2,0.2,0.2)
+		Point9.CFrame = Light.CFrame * CFrame.new(0,-1,-Light.Size.Z/2)
+		 * CFrame.new(Light.Size.X/2 ,-2 ,0)
+		 * CFrame.new(math.random(LightMinX,LightMaxX),0,0) 
+		 * CFrame.new(0,math.random(LightMinY,LightMaxY),0)
+		
+		local Point10 = Instance.new("Part",Model)
+		Point10.Transparency = 1
+		Point10.Anchored = true
+		Point10.CanCollide = false
+		Point10.Size = Vector3.new(0.2,0.2,0.2)
+		Point10.CFrame = Light.CFrame * CFrame.new(0,-1,Light.Size.Z/2)
+		 * CFrame.new(Light.Size.X/2 ,0 ,0)
+		 * CFrame.new(math.random(LightMinX,LightMaxX),0,0) 
+		 * CFrame.new(0,math.random(LightMinY,LightMaxY),0)
+		
+		local Point11 = Instance.new("Part",Model)
+		Point11.Transparency = 1
+		Point11.Anchored = true
+		Point11.CanCollide = false
+		Point11.Size = Vector3.new(0.2,0.2,0.2)
+		Point11.CFrame = Light.CFrame * CFrame.new(0,-1,-Light.Size.Z/2)
+		 * CFrame.new(Light.Size.X/2 ,-2 ,0)
+		 * CFrame.new(math.random(LightMinX2,LightMaxX2),0,0) 
+		 * CFrame.new(0,math.random(LightMinY,LightMaxY),0)
+		
+		local Point12 = Instance.new("Part",Model)
+		Point12.Transparency = 1
+		Point12.Anchored = true
+		Point12.CanCollide = false
+		Point12.Size = Vector3.new(0.2,0.2,0.2)
+		Point12.CFrame = Light.CFrame * CFrame.new(0,-1,Light.Size.Z/2)
+		 * CFrame.new(Light.Size.X/2 ,-2 ,0)
+		 * CFrame.new(math.random(LightMinX2,LightMaxX2),0,0) 
+		 * CFrame.new(0,math.random(LightMinY,LightMaxY),0)
+	
+	if PrevPoint2 == nil or PrevPoint2 == "Empty" then
+			local distance = (Point2.CFrame.p - Point1.CFrame.p).magnitude
+			local Light = Instance.new("Part",Model)
+			Light.Anchored = true
+			Light.CanCollide = false
+			Light.TopSurface = "SmoothNoOutlines"
+			Light.BottomSurface = "SmoothNoOutlines"
+			Light.BackSurface = "SmoothNoOutlines"
+			Light.FrontSurface = "SmoothNoOutlines"
+			Light.LeftSurface = "SmoothNoOutlines"
+			Light.RightSurface = "SmoothNoOutlines"
+			Light.Transparency = 0
+			Light.Size = Vector3.new(0.4,0.4,distance)
+			Light.Material = "Neon"
+			Light.BrickColor = Color
+			Light.CFrame = CFrame.new(Point2.CFrame.p , Point1.CFrame.p) * CFrame.new(0,0,-distance/2)
+		elseif PrevPoint2 ~= nil then
+			local distance = (Point2.CFrame.p - PrevPoint2).magnitude
+			local Light = Instance.new("Part",Model)
+			Light.Anchored = true
+			Light.CanCollide = false
+			Light.TopSurface = "SmoothNoOutlines"
+			Light.BottomSurface = "SmoothNoOutlines"
+			Light.BackSurface = "SmoothNoOutlines"
+			Light.FrontSurface = "SmoothNoOutlines"
+			Light.LeftSurface = "SmoothNoOutlines"
+			Light.RightSurface = "SmoothNoOutlines"
+			Light.Transparency = 0
+			Light.Size = Vector3.new(0.4,0.4,distance)
+			Light.Material = "Neon"
+			Light.BrickColor = Color
+			Light.CFrame = CFrame.new(Point2.CFrame.p , PrevPoint2) * CFrame.new(0,0,-distance/2)		
+		end
+	
+	if PrevPoint4 == nil or PrevPoint4 == "Empty" then
+			local distance = (Point4.CFrame.p - Point3.CFrame.p).magnitude
+			local Light = Instance.new("Part",Model)
+			Light.Anchored = true
+			Light.CanCollide = false
+			Light.TopSurface = "SmoothNoOutlines"
+			Light.BottomSurface = "SmoothNoOutlines"
+			Light.BackSurface = "SmoothNoOutlines"
+			Light.FrontSurface = "SmoothNoOutlines"
+			Light.LeftSurface = "SmoothNoOutlines"
+			Light.RightSurface = "SmoothNoOutlines"
+			Light.Transparency = 0
+			Light.Size = Vector3.new(0.4,0.4,distance)
+			Light.Material = "Neon"
+			Light.BrickColor = Color
+			Light.CFrame = CFrame.new(Point4.CFrame.p , Point3.CFrame.p) * CFrame.new(0,0,-distance/2)	
+		elseif PrevPoint4 ~= nil then
+			local distance = (Point4.CFrame.p - PrevPoint4).magnitude
+			local Light = Instance.new("Part",Model)
+			Light.Anchored = true
+			Light.CanCollide = false
+			Light.TopSurface = "SmoothNoOutlines"
+			Light.BottomSurface = "SmoothNoOutlines"
+			Light.BackSurface = "SmoothNoOutlines"
+			Light.FrontSurface = "SmoothNoOutlines"
+			Light.LeftSurface = "SmoothNoOutlines"
+			Light.RightSurface = "SmoothNoOutlines"
+			Light.Transparency = 0
+			Light.Size = Vector3.new(0.4,0.4,distance)
+			Light.Material = "Neon"
+			Light.BrickColor = Color
+			Light.CFrame = CFrame.new(Point4.CFrame.p , PrevPoint4) * CFrame.new(0,0,-distance/2)	
+		end
+	
+	
+	if PrevPoint6 == nil or PrevPoint6 == "Empty" then
+			local distance = (Point6.CFrame.p - Point5.CFrame.p).magnitude
+			local Light = Instance.new("Part",Model)
+			Light.Anchored = true
+			Light.CanCollide = false
+			Light.TopSurface = "SmoothNoOutlines"
+			Light.BottomSurface = "SmoothNoOutlines"
+			Light.BackSurface = "SmoothNoOutlines"
+			Light.FrontSurface = "SmoothNoOutlines"
+			Light.LeftSurface = "SmoothNoOutlines"
+			Light.RightSurface = "SmoothNoOutlines"
+			Light.Transparency = 0
+			Light.Size = Vector3.new(0.4,0.4,distance)
+			Light.Material = "Neon"
+			Light.BrickColor = Color
+			Light.CFrame = CFrame.new(Point6.CFrame.p , Point5.CFrame.p) * CFrame.new(0,0,-distance/2)	
+		elseif PrevPoint6 ~= nil then
+			local distance = (Point6.CFrame.p - PrevPoint6).magnitude
+			local Light = Instance.new("Part",Model)
+			Light.Anchored = true
+			Light.CanCollide = false
+			Light.TopSurface = "SmoothNoOutlines"
+			Light.BottomSurface = "SmoothNoOutlines"
+			Light.BackSurface = "SmoothNoOutlines"
+			Light.FrontSurface = "SmoothNoOutlines"
+			Light.LeftSurface = "SmoothNoOutlines"
+			Light.RightSurface = "SmoothNoOutlines"
+			Light.Transparency = 0
+			Light.Size = Vector3.new(0.4,0.4,distance)
+			Light.Material = "Neon"
+			Light.BrickColor = Color
+			Light.CFrame = CFrame.new(Point6.CFrame.p , PrevPoint6) * CFrame.new(0,0,-distance/2)	
+		end
+		
+	if PrevPoint8 == nil or PrevPoint8 == "Empty" then
+			local distance = (Point8.CFrame.p - Point7.CFrame.p).magnitude
+			local Light = Instance.new("Part",Model)
+			Light.Anchored = true
+			Light.CanCollide = false
+			Light.TopSurface = "SmoothNoOutlines"
+			Light.BottomSurface = "SmoothNoOutlines"
+			Light.BackSurface = "SmoothNoOutlines"
+			Light.FrontSurface = "SmoothNoOutlines"
+			Light.LeftSurface = "SmoothNoOutlines"
+			Light.RightSurface = "SmoothNoOutlines"
+			Light.Transparency = 0
+			Light.Size = Vector3.new(0.4,0.4,distance)
+			Light.Material = "Neon"
+			Light.BrickColor = Color
+			Light.CFrame = CFrame.new(Point8.CFrame.p , Point7.CFrame.p) * CFrame.new(0,0,-distance/2)	
+		elseif PrevPoint8 ~= nil then
+			local distance = (Point8.CFrame.p - PrevPoint8).magnitude
+			local Light = Instance.new("Part",Model)
+			Light.Anchored = true
+			Light.CanCollide = false
+			Light.TopSurface = "SmoothNoOutlines"
+			Light.BottomSurface = "SmoothNoOutlines"
+			Light.BackSurface = "SmoothNoOutlines"
+			Light.FrontSurface = "SmoothNoOutlines"
+			Light.LeftSurface = "SmoothNoOutlines"
+			Light.RightSurface = "SmoothNoOutlines"
+			Light.Transparency = 0
+			Light.Size = Vector3.new(0.4,0.4,distance)
+			Light.Material = "Neon"
+			Light.BrickColor = Color
+			Light.CFrame = CFrame.new(Point8.CFrame.p , PrevPoint8) * CFrame.new(0,0,-distance/2)
+		end
+		
+	if PrevPoint10 == nil or PrevPoint10 == "Empty" then
+			local distance = (Point10.CFrame.p - Point9.CFrame.p).magnitude
+			local Light = Instance.new("Part",Model)
+			Light.Anchored = true
+			Light.CanCollide = false
+			Light.TopSurface = "SmoothNoOutlines"
+			Light.BottomSurface = "SmoothNoOutlines"
+			Light.BackSurface = "SmoothNoOutlines"
+			Light.FrontSurface = "SmoothNoOutlines"
+			Light.LeftSurface = "SmoothNoOutlines"
+			Light.RightSurface = "SmoothNoOutlines"
+			Light.Transparency = 0
+			Light.Size = Vector3.new(0.4,0.4,distance)
+			Light.Material = "Neon"
+			Light.BrickColor = Color
+			Light.CFrame = CFrame.new(Point10.CFrame.p , Point9.CFrame.p) * CFrame.new(0,0,-distance/2)
+	elseif PrevPoint10 ~= nil then
+			local distance = (Point10.CFrame.p - PrevPoint10).magnitude
+			local Light = Instance.new("Part",Model)
+			Light.Anchored = true
+			Light.CanCollide = false
+			Light.TopSurface = "SmoothNoOutlines"
+			Light.BottomSurface = "SmoothNoOutlines"
+			Light.BackSurface = "SmoothNoOutlines"
+			Light.FrontSurface = "SmoothNoOutlines"
+			Light.LeftSurface = "SmoothNoOutlines"
+			Light.RightSurface = "SmoothNoOutlines"
+			Light.Transparency = 0
+			Light.Size = Vector3.new(0.4,0.4,distance)
+			Light.Material = "Neon"
+			Light.BrickColor = Color
+			Light.CFrame = CFrame.new(Point10.CFrame.p , PrevPoint10) * CFrame.new(0,0,-distance/2)	
+		end
+	
+		
+	if PrevPoint12 == nil or PrevPoint12 == "Empty" then
+			local distance = (Point12.CFrame.p - Point11.CFrame.p).magnitude
+			local Light = Instance.new("Part",Model)
+			Light.Anchored = true
+			Light.CanCollide = false
+			Light.TopSurface = "SmoothNoOutlines"
+			Light.BottomSurface = "SmoothNoOutlines"
+			Light.BackSurface = "SmoothNoOutlines"
+			Light.FrontSurface = "SmoothNoOutlines"
+			Light.LeftSurface = "SmoothNoOutlines"
+			Light.RightSurface = "SmoothNoOutlines"
+			Light.Transparency = 0
+			Light.Size = Vector3.new(0.4,0.4,distance)
+			Light.Material = "Neon"
+			Light.BrickColor = Color
+			Light.CFrame = CFrame.new(Point12.CFrame.p , Point11.CFrame.p) * CFrame.new(0,0,-distance/2)	
+		elseif PrevPoint12 ~= nil then
+			local distance = (Point12.CFrame.p - PrevPoint12).magnitude
+			local Light = Instance.new("Part",Model)
+			Light.Anchored = true
+			Light.CanCollide = false
+			Light.TopSurface = "SmoothNoOutlines"
+			Light.BottomSurface = "SmoothNoOutlines"
+			Light.BackSurface = "SmoothNoOutlines"
+			Light.FrontSurface = "SmoothNoOutlines"
+			Light.LeftSurface = "SmoothNoOutlines"
+			Light.RightSurface = "SmoothNoOutlines"
+			Light.Transparency = 0
+			Light.Size = Vector3.new(0.4,0.4,distance)
+			Light.Material = "Neon"
+			Light.BrickColor = Color
+			Light.CFrame = CFrame.new(Point12.CFrame.p , PrevPoint12) * CFrame.new(0,0,-distance/2)
+		end
+		PreviousP = Object.CFrame.p
+		PreviousA1 = Arm1.CFrame.p
+		PreviousA2 = Arm2.CFrame.p
+		PreviousL1 = Leg1.CFrame.p
+		PreviousL2 = Leg2.CFrame.p
+		PrevPoint1 = Point1.CFrame.p
+		PrevPoint2 = Point2.CFrame.p
+		PrevPoint3 = Point3.CFrame.p
+		PrevPoint4 = Point4.CFrame.p
+		PrevPoint5 = Point5.CFrame.p
+		PrevPoint6 = Point6.CFrame.p
+		PrevPoint7 = Point7.CFrame.p
+		PrevPoint8 = Point8.CFrame.p
+		PrevPoint9 = Point9.CFrame.p
+		PrevPoint10 = Point10.CFrame.p
+		PrevPoint11 = Point11.CFrame.p
+		PrevPoint12 = Point12.CFrame.p
+		local Children = Model:GetChildren()
+		wait(1)
+		for i = 1,10 do
+		local Remove = coroutine.wrap(function()
+		for i = 1,#Children do
+			if Children[i]:IsA("Part") then
+			Children[i].Transparency = Children[i].Transparency + 0.1
+				if Children[i].Transparency >= 1 and Children[i] ~= Light and Children[i] ~= Point1 and Children[i] ~= Point2 and Children[i] ~= Point3
+					 and Children[i] ~= Point4 and Children[i] ~= Point5 and Children[i] ~= Point6 and Children[i] ~= Point7 and Children[i] ~= Point8
+					 and Children[i] ~= Point9 and Children[i] ~= Point10 and Children[i] ~= Point11 and Children[i] ~= Point12 then
+					game.Debris:AddItem(Children[i],0)
+				end
+			end
+			if Children[i].ClassName ~= "Part" then
+				game.Debris:AddItem(Children[i],0)
+			end
+		end			
+		end)
+			Remove()
+			wait(0.05)
+		end
+		game.Debris:AddItem(Light,0)
+		game.Debris:AddItem(Point1,0)
+		game.Debris:AddItem(Point2,0)
+		game.Debris:AddItem(Point3,0)
+		game.Debris:AddItem(Point4,0)
+		game.Debris:AddItem(Point5,0)
+		game.Debris:AddItem(Point6,0)
+		game.Debris:AddItem(Point7,0)
+		game.Debris:AddItem(Point8,0)
+		game.Debris:AddItem(Point9,0)
+		game.Debris:AddItem(Point10,0)
+		game.Debris:AddItem(Point11,0)
+		game.Debris:AddItem(Point12,0)
+	end
+	end)
+	
+end
+coroutine.wrap(RKBCIF_fake_script)()
